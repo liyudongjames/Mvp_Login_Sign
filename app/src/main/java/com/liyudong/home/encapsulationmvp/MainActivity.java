@@ -190,7 +190,6 @@ public class MainActivity extends BaseActivity implements LoginView<String> {
 
     @Override
     protected void onDestroy() {
-        Toast.makeText(this, "销毁activity", Toast.LENGTH_SHORT).show();
         loginPresenter.detachView();
         super.onDestroy();
     }
